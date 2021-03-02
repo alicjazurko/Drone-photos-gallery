@@ -1,0 +1,50 @@
+.gallery {
+    display: grid;
+    justify-content: space-evenly;
+    margin: 10px;
+    @media screen and (min-width: map-get($breakpoints, xs)) {
+        grid-template-columns: 50% 50%;
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+    @media screen and (min-width: map-get($breakpoints, md)) {
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+
+}
+
+.image {
+    margin: 15px;
+    background-color: $image-title-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+ 
+    @media screen and (min-width: map-get($breakpoints, sm)) {
+        // margin: 20px;
+        column-gap: 10px;
+    }
+
+    &__pic {
+        max-width: 100%;
+        min-height: 200px;
+        overflow: hidden;
+        
+    }
+    &__info {
+        margin: 20px;
+        font-size: $small-font-size;
+        text-align: center;
+
+
+                
+        @media screen and (min-width: map-get($breakpoints, sm)) {
+            font-size: $base-font-size;
+            
+        }
+
+    }
+}
