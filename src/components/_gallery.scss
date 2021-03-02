@@ -2,6 +2,7 @@
     display: grid;
     justify-content: space-evenly;
     margin: 10px;
+    
     @media screen and (min-width: map-get($breakpoints, xs)) {
         grid-template-columns: 50% 50%;
         column-gap: 10px;
@@ -30,8 +31,9 @@
 
     &__pic {
         max-width: 100%;
-        min-height: 200px;
         overflow: hidden;
+        object-fit: cover;
+        height: 100%;
         
     }
     &__info {
