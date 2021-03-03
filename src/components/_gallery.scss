@@ -1,19 +1,24 @@
 .gallery {
     display: grid;
     justify-content: space-evenly;
-    margin: 10px;
+    background-color: $bgc;
+    
     
     @media screen and (min-width: map-get($breakpoints, xs)) {
-        grid-template-columns: 50% 50%;
-        column-gap: 10px;
-        row-gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        // column-gap: 10px;
+        // row-gap: 15px;
     }
     @media screen and (min-width: map-get($breakpoints, md)) {
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 10px;
         row-gap: 15px;
     }
 
+}
+
+.column {
+    margin: 0;
 }
 
 .image {
@@ -40,6 +45,7 @@
         margin: 20px;
         font-size: $small-font-size;
         text-align: center;
+        
 
 
                 
@@ -49,4 +55,13 @@
         }
 
     }
+
+    transition: ease-in .3s;
+    &:hover {
+        background-color: $image-title-hover;
+    }
+
+
+
+
 }

@@ -1,7 +1,7 @@
 .footer__container {
     display: flex;
     flex-direction: column; //do zmiany w responsive
-    background-color: gray;
+    background-color: $bgc-footer;
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -147,10 +147,14 @@
 
         &__button{
             background-color: $button-color;
-            border: 1px solid lighten($button-color, 10%);
+            border: none;
             height: 35px;
             font-weight: 700;
             border-radius: 3px;
+            transition: 0.2s linear;
+            &:hover {
+                background-color: lighten($button-color, 10%);
+            }
 
         }
     }
