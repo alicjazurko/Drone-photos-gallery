@@ -5,14 +5,16 @@ $small-font-size: 14px;
 
 $font-family: 'Montserrat', sans-serif;
 
-$main-spacing: 20px;
-$max-width: 1000px;
-
 $color-primary: orange;
 $button-color: rgb(243, 20, 143);
 
 //Gallery
-$image-title-color: #eee;
+$bgc: #eee;
+$image-title-color: rgb(195, 206, 209);
+$image-title-hover: rgb(151, 166, 177);
+
+//footer
+$bgc-footer: gray;
 
 $breakpoints: (
     xs: 500px,

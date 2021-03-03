@@ -11,6 +11,8 @@
   <div class="root">
 
     <header class="header">
+      <canvas id="canvas"></canvas>
+      <img class="imgbgcanvas" src="images/niebo-canavs.JPG" alt="" style="display: none">
         <h1 class="header__title">
           Drone photogallery
         </h1>
@@ -32,194 +34,200 @@
     <main class="page">
 
       <section class="gallery">
-        <div class="image">
-          <img class="image__pic" src="images/goclaw1.JPG" alt="">
-          <p class="image__info">
+        <div class="column">
+          <div class="image">
+            <img class="image__pic" src="images/swietokrzyski1.JPG" alt="">
+            <p class="image__info">
+              Panorama miasta, Most Świętokrzyski, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/siekierki2.JPG" alt="">
+            <p class="image__info">
+              Zachód słońca nad Mostem Siekierkowskim, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/rondoglinianki.JPG" alt="">
+            <p class="image__info">
+              Park, Sulejówek, Glinianki
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/srodmiescie.JPG" alt="">
+            <p class="image__info">
+              Neony, Warszawa Śródmieście
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/siekierki1.JPG" alt="">
+            <p class="image__info">
+              Zachód słońca nad Mostem Siekierkowskim, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/swietokrzyski2.JPG" alt="">
+            <p class="image__info">
+              Panorama miasta, Most Świętokrzyski, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/truskawka.JPG" alt="">
+            <p class="image__info">
+              Opuszczona Truskawka
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/checiny2.JPG" alt="">
+            <p class="image__info">
+              Zamek w Chęcinach, Świętokrzyskie
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="image">
+            <img class="image__pic" src="images/mologlinianki.JPG" alt="">
+            <p class="image__info">
+              Molo, Sulejówek, Glinianki
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/mologoclaw.JPG" alt="">
+            <p class="image__info">
+              Molo nad Balatonem, Gocław, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/zegrze3.JPG" alt="">
+            <p class="image__info">
+              Opuszczony Hotel, Zalew Zegrzyński
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/noc2.JPG" alt="">
+            <p class="image__info">
+              Nocna trasa Siekierkowska, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/ptaki2.JPG" alt="">
+            <p class="image__info">
+              Ptaki, Pole Mokotowskie, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/siekierki3.JPG" alt="">
+            <p class="image__info">
+              Panorama miasta nad Wisłą, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/samolot.JPG" alt="">
+            <p class="image__info">
+              Opuszczony Antonow An-2, Zalesie Górne
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="image">
+            <img class="image__pic" src="images/goclaw1.JPG" alt="">
+            <p class="image__info">
+                Panorama miasta, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/checiny1.JPG" alt="">
+            <p class="image__info">
+              Zamek w Chęcinach, Świętokrzyskie
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/boisko.JPG" alt="">
+            <p class="image__info">
+              Boisko szkolne, Sulejówek, Glinianki
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/goclaw2.JPG" alt="">
+            <p class="image__info">
               Panorama miasta, Warszawa
-          </p>
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/krzyztopor.JPG" alt="">
+            <p class="image__info">
+              Zamek Krzyżtopór, Świętokrzyskie
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/ptaki1.JPG" alt="">
+            <p class="image__info">
+              Ptaki, Pole Mokotowskie, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/mgla.JPG" alt="">
+            <p class="image__info">
+              Panorama miasta we mgle, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/zegrze2.JPG" alt="">
+            <p class="image__info">
+              Zalew Zegrzyński
+            </p>
+          </div> 
         </div>
-        <div class="image">
-          <img class="image__pic" src="images/checiny1.JPG" alt="">
-          <p class="image__info">
-            Zamek w Chęcinach, Świętokrzyskie
-          </p>
+        <div class="column">
+          <div class="image">
+            <img class="image__pic" src="images/noc1.JPG" alt="">
+            <p class="image__info">
+              Nocna panorama miasta, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/noc3.JPG" alt="">
+            <p class="image__info">
+              Nocna trasa Siekierkowska, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/noc4.JPG" alt="">
+            <p class="image__info">
+              Most Siekierkowski nocą, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/okuniew1.JPG" alt="">
+            <p class="image__info">
+              Ruiny stacji kolejowej, Okuniew
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/okuniew2.JPG" alt="">
+            <p class="image__info">
+              Ruiny stacji kolejowej, Okuniew
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/zegrze1.JPG" alt="">
+            <p class="image__info">
+              Żaglówka, Zalew Zegrzyński
+            </p>
+          </div> 
+          <div class="image">
+            <img class="image__pic" src="images/parkskaryszewski.JPG" alt="">
+            <p class="image__info">
+              Park Skaryszewski z panoramą miasta, Warszawa
+            </p>
+          </div>
+          <div class="image">
+            <img class="image__pic" src="images/mglajesien.JPG" alt="">
+            <p class="image__info">
+              Jesień w Warszawie
+            </p>
+          </div>
         </div>
-        <div class="image">
-          <img class="image__pic" src="images/mglajesien.JPG" alt="">
-          <p class="image__info">
-            Jesień w Warszawie
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/boisko.JPG" alt="">
-          <p class="image__info">
-            Boisko szkolne, Sulejówek, Glinianki
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/goclaw2.JPG" alt="">
-          <p class="image__info">
-            Panorama miasta, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/krzyztopor.JPG" alt="">
-          <p class="image__info">
-            Zamek Krzyżtopór, Świętokrzyskie
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/mgla.JPG" alt="">
-          <p class="image__info">
-            Panorama miasta we mgle, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/checiny2.JPG" alt="">
-          <p class="image__info">
-            Zamek w Chęcinach, Świętokrzyskie
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/mologlinianki.JPG" alt="">
-          <p class="image__info">
-            Molo, Sulejówek, Glinianki
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/mologoclaw.JPG" alt="">
-          <p class="image__info">
-            Molo nad Balatonem, Gocław, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/noc1.JPG" alt="">
-          <p class="image__info">
-            Nocna panorama miasta, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/noc2.JPG" alt="">
-          <p class="image__info">
-            Nocna trasa Siekierkowska, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/noc3.JPG" alt="">
-          <p class="image__info">
-            Nocna trasa Siekierkowska, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/noc4.JPG" alt="">
-          <p class="image__info">
-            Most Siekierkowski nocą, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/okuniew1.JPG" alt="">
-          <p class="image__info">
-            Ruiny stacji kolejowej, Okuniew
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/okuniew2.JPG" alt="">
-          <p class="image__info">
-            Ruiny stacji kolejowej, Okuniew
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/parkskaryszewski.JPG" alt="">
-          <p class="image__info">
-            Park Skaryszewski z panoramą miasta, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/ptaki1.JPG" alt="">
-          <p class="image__info">
-            Ptaki, Pole Mokotowskie, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/ptaki2.JPG" alt="">
-          <p class="image__info">
-            Ptaki, Pole Mokotowskie, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/siekierki3.JPG" alt="">
-          <p class="image__info">
-            Panorama miasta nad Wisłą, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/samolot.JPG" alt="">
-          <p class="image__info">
-            Opuszczony Antonow An-2, Zalesie Górne
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/swietokrzyski1.JPG" alt="">
-          <p class="image__info">
-            Panorama miasta, Most Świętokrzyski, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/siekierki2.JPG" alt="">
-          <p class="image__info">
-            Zachód słońca nad Mostem Siekierkowskim, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/rondoglinianki.JPG" alt="">
-          <p class="image__info">
-            Park, Sulejówek, Glinianki
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/srodmiescie.JPG" alt="">
-          <p class="image__info">
-            Neony, Warszawa Śródmieście
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/siekierki1.JPG" alt="">
-          <p class="image__info">
-            Zachód słońca nad Mostem Siekierkowskim, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/swietokrzyski2.JPG" alt="">
-          <p class="image__info">
-            Panorama miasta, Most Świętokrzyski, Warszawa
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/truskawka.JPG" alt="">
-          <p class="image__info">
-            Opuszczona Truskawka
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/zegrze2.JPG" alt="">
-          <p class="image__info">
-            Zalew Zegrzyński
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/zegrze3.JPG" alt="">
-          <p class="image__info">
-            Opuszczony Hotel, Zalew Zegrzyński
-          </p>
-        </div>
-        <div class="image">
-          <img class="image__pic" src="images/zegrze1.JPG" alt="">
-          <p class="image__info">
-            Żaglówka, Zalew Zegrzyński
-          </p>
-        </div>
-
-        
       </section>
     </main>
 
