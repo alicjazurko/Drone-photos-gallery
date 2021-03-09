@@ -28,6 +28,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    border-radius: $border-radius;
+
  
     @media screen and (min-width: map-get($breakpoints, sm)) {
         // margin: 20px;
@@ -39,6 +42,8 @@
         overflow: hidden;
         object-fit: cover;
         height: 100%;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
         
     }
     &__info {
@@ -56,7 +61,7 @@
 
     }
 
-    transition: ease-in .3s;
+    transition: ease-in .1s;
     &:hover {
         background-color: $image-title-hover;
     }
