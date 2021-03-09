@@ -13,7 +13,6 @@ class Sky {
 
         const imgbgcanvas = document.querySelector('.imgbgcanvas');
         this.ctx.drawImage(imgbgcanvas, 10, 10)
-        // this.ctx.fillStyle = 'rgb(9, 18, 41)';
         this.ctx.fillRect(0,0, this.width, this.height);
 
     }
@@ -69,7 +68,6 @@ class Sky {
     clearCanvas() {
         const imgbgcanvas = document.querySelector('.imgbgcanvas');
         this.ctx.drawImage(imgbgcanvas, 0, 0)
-        // this.ctx.fillStyle = 'rgb(9, 18, 41)';
         this.ctx.fillRect(0,0, this.width, this.height);
     }
 
@@ -96,14 +94,22 @@ class Sky {
         this.ctx.restore(); //przywrocenie canvasa
     }
 
+    text(text, font, color) {
+        this.ctx.font = font;
+        this.ctx.fillStyle = color;
+        this.ctx.textAlign = "center";
+        this.ctx.fontWeight = "900";
+        this.ctx.fillText(text, this.canvas.width/2, this.canvas.height/2);
+
+    }
+
     draw(now) {
         this.delta = now - this.lastUpdate;
         this.clearCanvas();
+        this.text("Drone photography","35px 'Montserrat'", "black");
         this.drawStars();
         this.updateStars();
         this.drawOverlayer();
-
-
 
         this.lastUpdate = now;
         window.requestAnimationFrame((now) => this.draw(now)); //odswiezanie animacji

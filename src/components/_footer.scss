@@ -16,7 +16,7 @@
 
 .footer__end {
     height: 30px;
-    background-color: #333;
+    background-color: darken($bgc-footer, 20%);
     text-align: center;
     line-height: 30px;
 }
@@ -152,8 +152,10 @@
             font-weight: 700;
             border-radius: 3px;
             transition: 0.2s linear;
+            cursor: pointer;
             &:hover {
                 background-color: lighten($button-color, 10%);
+                
             }
 
         }

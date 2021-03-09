@@ -5,16 +5,19 @@ $small-font-size: 14px;
 
 $font-family: 'Montserrat', sans-serif;
 
-$color-primary: orange;
-$button-color: rgb(243, 20, 143);
+// $color-primary: orange;
+$button-color: rgb(73, 142, 206);
 
+//rgb(243, 20, 143)
 //Gallery
 $bgc: #eee;
-$image-title-color: rgb(195, 206, 209);
-$image-title-hover: rgb(151, 166, 177);
+$image-title-color: rgb(197, 199, 201);
+$image-title-hover: darken($image-title-color, 10%);
+$border-radius: 10px;
 
+// rgb(195, 206, 209) rgb(151, 166, 177) 
 //footer
-$bgc-footer: gray;
+$bgc-footer: darken($bgc, 10%);
 
 $breakpoints: (
     xs: 500px,
